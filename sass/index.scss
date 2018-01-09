@@ -36,12 +36,17 @@ $bottom :bottom;
                position: absolute;
                left: 0;
                top: 30px;
-               width: 240px;
-               height:100px;
-               background: pink;
+               width: 262px;
+               height:310px;
+               background:#fff;
+               font-size: 12px;
+               line-height: 18px;
            }
            
         }
+        #send-box:hover  #send-position{
+            display: block;
+          }
         #entry{
             background:#fafafa;
             width: 516px;
@@ -320,7 +325,7 @@ $bottom :bottom;
             height: 292px;
             background: yellowgreen;
             float: left;
-            position: absolute;
+            position: relative;
             #tab-nav{
                 width: 1000px;
                 height: 38px;
@@ -365,6 +370,9 @@ $bottom :bottom;
                         color: #555555;
                         font-size: 12px;
                     }
+                    a:hover{
+                         color:#fabe00;
+                    }
                     dd{
                         color: #c2a2b2;
                         font-size: 12px;
@@ -374,16 +382,13 @@ $bottom :bottom;
                            font-size: 12px;
                            font-weight: 900;
                        }
-                    }
-                    
+                    } 
                 }
             }
-            #case2,#case3{
+             #case2,#case3{
                 position:absolute;
                 left: 0;
                 top: 40px;
-                    
-                
             }
         }
         #tab-right{
@@ -391,6 +396,51 @@ $bottom :bottom;
             width: 200px;
             height: 294px;
             background: skyblue;
+            h3{
+                padding-left: 10px;
+                height: 37px;
+                width: 186px;
+                line-height: 37px;
+                background: orange;
+                margin-top: 10px;
+                border: 1px solid #f0f0f0;
+                span{
+                    margin-left: 2px;
+                    font-size: 10px;
+                    color: #66668a;
+                }
+            }
+            ul{
+                width: 182px;
+                height: 108px;
+                background: #fff;
+                padding-top: 10px;
+                padding-left: 14px;
+                 border: 1px solid #f0f0f0;
+                li{
+                    width: 176px;
+                    height: 22px;
+                    color: #555;
+                    font-size: 12px;
+                    white-space:nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                   a{
+                       color:#9f6a6a
+                   }
+                    a:hover{
+                         color:#fabe00;
+                    }
+                }
+            }
+            img{
+                width: 200px;
+                height: 115px;
+                margin-top:10px
+                    
+                
+            }
+           
         }
     }
 }
