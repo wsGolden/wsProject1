@@ -581,7 +581,7 @@ $bottom :bottom;
 }
 //1F家装主材
 .main1{
-    background: #ccc;
+    background: #fff;
     .main-con{
         width: 1200px;
         height: 581px;
@@ -590,12 +590,16 @@ $bottom :bottom;
         .main-top{
             height: 80px;
             width: 1200px;
-            background: orange;
+           background: #fff;
             h2{
                 float: left;
                 width: 124px;
                 height: 78px;
-                background: skyblue;
+                background: #fff;
+                text-align: center;
+                font-size: 22px;
+                line-height: 78px;
+                color: #666;
                 border-bottom:2px solid #60b3ff;
             }
          }
@@ -603,7 +607,7 @@ $bottom :bottom;
               float: right;
               width: 194px;
               height: 30px;
-              background: yellow;
+              background: #fff;
               padding-left: 20px;
               padding-top:50px;
               li{
@@ -623,7 +627,7 @@ $bottom :bottom;
         .main-middle{
               height: 500px;
               width: 1200px;
-              background: #000;
+             background: #fff;
               border-top:1px solid #60b3ff;
               position: relative;
 //            高图
