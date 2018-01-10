@@ -5,22 +5,22 @@ $bottom :bottom;
 //top
 #top{
   
-    background: #ccc;
+    background:#fafafa;
     #top-con{
         width: 1200px;
         height: 30px;
         margin:0 auto;
-        background: pink;
+        background:#fafafa;
         border#{$bottom}:1px solid #f0f0f0;
         #send-box{
            width: 240px;
            height: 30px;
-           background: yellow;
+           background:#fafafa;
            float: left;
            position: relative;
           
           .send{
-              background: #fff;
+             background:#F7F7F7;
                width: 91px;
                height: 30px;
                font-size: 12px;
@@ -91,22 +91,47 @@ $bottom :bottom;
         #menu{
             width: 440px;
             height: 30px;
-            background: skyblue;
+           background:#fafafa;
             float: left;
-            li{
-                float:left;
-         
+            dl{
+                height: 30px;
+                width: 80px;
+                float: left;
+                position: relative;
             }
+           dt{
+               width: 80px;
+               height: 30px;
+           }
+           dd{
+               height: 90px;
+               width: 80px;
+               position: absolute;
+               background: #fff;
+               left: 0;
+               top: 30px;
+               z-index: 100;
+               display: none;
+           }
+           #sjzx{
+               height: 60px;
+           }
+           dl:hover dd{
+               display: block;
+           }
+           
             a{
                 display: block;
                 width: 80px;
                 height: 30px;
                 line-height: 30px;
                 text-align: center;
-                font-size: 14px;
+                font-size: 12px;
                 color: #777;
             }
-    
+            a:hover{
+                background: #F7F7F7;
+            }
             #a3{
                     width: 95px;
                     background: url(../images/mobile-shopicon.png) no-repeat 6px 6px;
@@ -120,11 +145,11 @@ $bottom :bottom;
 }
 //public
 #public-logo{
-    background: #ccc;
+    background: #fff;
     #public-con{
         width: 1200px;
         height: 100px;
-        background: pink;
+        background: #fff;
         margin:0 auto;
     }
     #logo{
@@ -144,15 +169,17 @@ $bottom :bottom;
        #keyword{
         width: 510px;
         height: 100px;
-        background: skyblue;
+        background:#fff;
         float: left;
         #search{
             padding-top: 4px;
-            width: 510px;
+            width: 508px;
             height: 42px;
             background:#ffa500;
             margin-top: 22px;
-            span{
+            padding-left: 2px;
+            
+           dl{
                 text-align: center;
                 line-height: 38px;
                 font-size: 12px;
@@ -162,6 +189,30 @@ $bottom :bottom;
                 background: #f9f9f9;
                 float:left;
                 color: #8a6666;
+                position: relative;
+                dt{
+                   height: 38px;
+                width: 64px; 
+                }
+                dd{
+                  position: absolute;
+                  top: 38px;
+                  left: 0;
+                   display: none;
+                   width: 64px;
+                   height: 62px;
+                    font-size: 12px;
+                    background: #fff;
+                    
+                    a{
+                         background: #fff;
+                        display:block;
+                        width: 64px;
+                        height: 31px;
+                        color:#333;
+                       
+                    }
+                }
             }
             #txt{
                 width: 360px;
@@ -174,7 +225,7 @@ $bottom :bottom;
                  float: left;
             }
             #sear{
-                width: 86px;
+                width: 84px;
                 height: 38px;
                 line-height: 38px;
                 text-align:center;
@@ -206,24 +257,79 @@ $bottom :bottom;
     #index-cart{
         width: 200px;
         height: 100px;
-        background: #000000;
+        background: #fff;
         float: left;
         position: relative;
         #cart-con{
             width: 147px;
             height: 42px;
-            background: #FFFF00;
+            background: #fafafa;
             position: absolute;
             right:0;
             top: 23px;
             font-size: 15px;
             color: #555;
             text-align: center;
+            border: 1px solid #f0f0f0;
            line-height: 42px;
             i{
-                font-size: 20px;
+                font-size: 16px;
                 color: #d7d7d7;
+                
             }
+            a{
+                color: #666;
+            }
+        }
+
+        #cart-con1{
+            border: 1px solid #f0f0f0;
+            width: 348px;
+            height: 151px;
+            background: pink;
+            position: absolute;
+            right: 0;
+            top: 65px;
+            z-index: 101;
+            display: none;
+           h2{
+               width: 343px;
+               height: 33px;
+              font-weight: 600;
+              color: #666666; 
+              background:#fff;
+              padding: 10px 0 0 5px;
+              border-bottom: 1px solid #333333; 
+            }
+            #cart-con2{
+                width: 308px;
+                height: 38px;
+                background:#fff;
+                font-size: 12px;
+                color: 666;
+                padding:20px 0 0 40px
+            }
+            .buy{
+                width: 348px;
+                height: 48px;
+                background:#F0F0F0;
+                .buy1{
+                    width: 130px;
+                     height: 30px;
+                     background: #ffa227;   
+                     color:#fff;
+                     font-size: 14px;     
+                     text-align: center;
+                     line-height: 30px;    
+                     border-radius: 4px; 
+                     float: right;
+                    margin:10px 10px 0 0;  
+                    a{
+                        color:#fff;
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -433,6 +539,7 @@ $bottom :bottom;
             width: 200px;
             height: 294px;
             background: skyblue;
+            position: relative;
             h3{
                 padding-left: 10px;
                 height: 37px;
@@ -470,11 +577,26 @@ $bottom :bottom;
                     }
                 }
             }
+            #zxkb2{
+                position: absolute;
+                top: 47px;
+                left:0;
+                z-index:-1;
+            }
+            #sckb2{
+                position: absolute;
+                top: 47px;
+                left:0; 
+            }
+          
             img{
+                position: absolute;
+                top: 178px;
+                left: 0;
                 width: 200px;
                 height: 115px;
-                margin-top:10px
-                    
+//              margin-top:10px
+                
                 
             }
            

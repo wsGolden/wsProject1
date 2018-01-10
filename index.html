@@ -3,9 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/require.js" defer 
+			async="true" data-main="js/main">
+			
+		</script>
 		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<!--<link rel="stylesheet" href="css/lbt.css" />-->
 	</head>
 	<body>
 		<!--头部-->
@@ -24,9 +29,9 @@
 							    <li><a href="">山西省</a></li>
 							    <li><a href="">内蒙古自治区</a></li>
 							    <li><a href="">辽宁省</a></li>
-							    <li><a href=""></a></li>
-							    <li><a href=""></a></li>
-							    <li><a href=""></a></li>
+							    <li><a href="">山东省</a></li>
+							    <li><a href="">广西省</a></li>
+							    <li><a href="">云南省</a></li>
 							    <li><a href=""> 海外</a></li>
 							    <li><a href="">澳门特别行政区</a></li>
 							    <li><a href=""> 香港特别行政区</a></li>
@@ -58,13 +63,44 @@
 						<a href="">免费注册</a>
 					</div>
 					<div id="menu">
-						<ul>
-							<li><a href="#">我的订单</a></li>
-							<li><a href="#">商家中心</a></li>
-							<li><a href="#" id="a3">手机为为</a></li>
-							<li><a href="#">客户服务</a></li>
-							<li><a href="#"id="a5">关注我们</a></li>
-						</ul>
+						<dl id="">
+							<dt id="">
+									<a href="#">我的订单</a>
+									
+							</dt>
+							<dd>
+									<a href="#">待付款订单</a>
+									<a href="#">待确认收货</a>
+									<a href="#">待评价</a>
+							</dd>
+						</dl>	
+						<dl>
+							<dt>
+							<a href="#" >商家中心</a>
+							</dt>
+							<dd id="sjzx">
+								<a href="">申请入驻</a>
+								<a href="">我的店铺</a>
+								
+							</dd>
+						</dl>
+						<dl>
+							<a href="#" id="a3">手机为为</a>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">客户服务</a>
+							</dt>
+							<dd>
+								<a href="#">帮助中心</a>
+									<a href="#">售后服务</a>
+									<a href="#">客服中心</a>
+							</dd>
+						</dl>	
+						<dl>
+							<a href="#"id="a5">关注我们</a>
+						</dl>	
+
 					</div>
 				</div>
 			</div>
@@ -79,11 +115,15 @@
 					</div>
 					<div id="keyword">
 						<div id="search">
-							<span>
-								<em>
+							<dl id="searul">
+								<dt id="seardt">
 									商品
-								</em>
-							</span>
+								</dt>
+								<dd>
+									<a href="#">商品</a>
+									<a href="#">店铺</a>
+								</dd>
+							</dl>
 							<input type="text" name="" id="txt" value="请输入您要搜索的商品关键字" />
 							<a href="#" id="sear">搜索</a>
 							<ul>
@@ -97,7 +137,18 @@
 					</div>
 					<div id="index-cart">
 						<div id="cart-con">
-						<a href="#"><i class="iconfont icon-gouwuche"></i>我的购物车</a>
+							<a href="#"><i class="iconfont icon-gouwuche"></i>我的购物车</a>
+						</div>
+						<div id="cart-con1">
+								<h2>最新加入商品</h2>
+								<div id="cart-con2">
+									您的购物车中暂无商品，赶快选择心爱的商品吧！
+								</div>
+								<div class="buy">
+									<div class="buy1">
+									<a href="">结算购物车中的商品</a>	
+									</div>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -145,8 +196,15 @@
 </p>							
 						</div>
 					</div>
+					<div id="slide1" class="container">
+						<ul>
+							<li><a href="http://www.1000phone.com"><img src="images/banner1.jpg" alt="文字1"/></a></li>
+							<li><a href="http://www.1000phone.com"><img src="images/banner2.jpg" alt="文字2"/></a></li>
+							<li><a href="http://www.1000phone.com"><img src="images/banner3.jpg" alt="文字3"/></a></li>
+							<li><a href="http://www.1000phone.com"><img src="images/banner4.jpg" alt="文字4"/></a></li>
+						</ul>
+					</div>
 					
-					<img src="images/banner3.jpg" alt="" />
 				</div>
 			</div>
 			<!--tab-->
@@ -154,9 +212,9 @@
 				<div id="tab-con">
 					<div id="tab-left">
 						<div id="tab-nav">
-							<a href="#"><h3>热卖商品</h3></a>
-							<a href="#"><h3>热评</h3></a>
-							<a href="#"><h3 id="hh1">新品上架</h3></a>
+							<a href="#"><h3 id="tabbtn1">热卖商品</h3></a>
+							<a href="#"><h3 id="tabbtn1">热评</h3></a>
+							<a href="#"><h3 id="hh1" >新品上架</h3></a>
 						</div>
 						<div id="case1">
 							<li><img src="images/case1.jpg" alt="" /><dt><a href="">1瑞肯橱柜 榻榻米 白色 平方</a></dt><dd>商城价：<em>￥198.00</em></dd></li>
@@ -181,13 +239,20 @@
 						</div>
 					</div>
 					<div id="tab-right">
-						<h3><span>商城快报</span>&nbsp;&nbsp;|&nbsp;<span>装修快报</span></h3>
-						<ul>
+						<h3><span id="sckb1">商城快报</span>&nbsp;&nbsp;|&nbsp;<span id="zxkb1">装修快报</span></h3>
+						<ul id="sckb2">
 							<li><a href="#">400客服电话调整公告</a><i>(2016-01-01)</i></li>
 							<li><a href="#">新广告法违禁词汇总</a><i>(2013-01-01)</i></li>
 							<li><a href="#">快速提交BUG，请点进来哦！</a><i>(2015-01-01)</i></li>
 							<li><a href="#">为为商城物流配送说明</a><i>(2018-01-01)</i></li>
 							<li><a href="#">新版上线，签到功能调整 </a><i>(2017-01-01)</i></li>			
+						</ul>
+						<ul id="zxkb2">
+							<li><a href="#">2016年建配龙最新商场导购地</a></li>
+							<li><a href="#">建配龙国庆家装狂欢节</a></li>
+							<li><a href="#">【网安互动】你知道公安部门</a></li>
+							<li><a href="#">网络安全宣传手册</a></li>
+							<li><a href="#">为为商城祝网友中秋节快乐！</a></li>			
 						</ul>
 						<img src="images/tab-right.jpg" alt="" />
 					</div>
@@ -414,11 +479,10 @@
 				<p>
 					<a href="">首页</a>
 					<a href=""></a><em>	 |</em>
-					<a href="">合作及洽谈</a><em>	 |</em>
+					<a href="">合作及洽谈</a><em>	   |</em>
 					<a href="">联系我们</a><em>	 |</em>
 					<a href="">关于我们</a><em>	 |</em>
 					<a href="">友情链接</a>
-					
 				</p>
 				Copyright 2015 沪ICP备08001311号 | 营业执照
 			</div>
