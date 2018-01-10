@@ -36,11 +36,36 @@ $bottom :bottom;
                position: absolute;
                left: 0;
                top: 30px;
-               width: 262px;
-               height:310px;
+               width: 240px;
+               height:400px;
                background:#fff;
                font-size: 12px;
                line-height: 18px;
+               z-index: 3;
+               li{
+                   float: left;
+                   height: 20px;
+                   margin-top:15px;
+                   margin-left:20px;
+                  
+               }
+               a{
+                   color: #000;
+               }
+               #bj{
+                   background:#ffac00;
+                   width: 40px;
+                   text-align: center;
+                   a{
+                       color:#fff;
+                   }
+               }
+               li:hover{
+                   background: #ccc;
+                   a{
+                       color:#ffac00; 
+                   }
+               }
            }
            
         }
@@ -259,6 +284,7 @@ $bottom :bottom;
         height: 400px;
         background: #000;
         position: relative;
+        //分类推荐下的div
         #classes{
             width: 212px;
             height: 400px;
@@ -537,7 +563,8 @@ $bottom :bottom;
 }
 //电梯
 #center{
-    background: #ccc;
+    background: #fff;
+    margin-top: 20px;
     #center-box{
         background:#fff;
         width: 1200px;
@@ -675,5 +702,156 @@ $bottom :bottom;
                 }
             }
         } 
+    }
+}
+//footer
+//agree
+#agree{
+    background: #fff;
+    margin-top:20px;
+    border-top: 4px solid #e7e7e7;
+    border-bottom: 6px solid #f9f9f9;
+    #agree-con{
+        width: 1200px;
+        height: 102px;
+       background: #fff;
+        margin:0 auto;
+        padding-top:20px;
+        
+        a{
+            display: block;
+            width: 198px;
+//          height: 65px;
+            float: left;
+            text-align: center;
+           background: #fff;
+            font-size: 14px;
+            color: #000;
+        }
+        img{
+            display: block;
+            margin:0 auto;
+            margin-bottom:12px
+            
+        }
+    }
+}
+//客服
+#connect{
+   background: #fff;
+    #connect-con{
+        width: 1200px;
+        height: 176px;
+        background: #fff;
+        margin: 0 auto;
+        padding-top: 30px;
+        #faq{
+            width: 1200px;
+            height: 145px;
+            background: #fff;
+            #faq-left{
+                width: 251px;
+                height: 145px;
+                background: #fff;
+                float:left;
+                h2{
+                    color: #001f6f;
+                    font-size: 16px;
+                }
+                #tel{
+                    width: 250px;
+                    height: 71px;
+                    margin-top:20px;
+                  background: #fff;
+                    img{
+                        float:left;
+                        margin-right: 10px;
+                    }
+                    h2{
+                        float:left;
+                        color:#ffad42;
+                        font-weight: 900;
+                        font-size: 16px;
+                    }
+                    span{
+                        font-size: 12px;
+                        color:#666;
+                    }
+                }
+            }
+            #faq-middle{
+                 float: left;
+                width: 678px;
+                height: 145px;
+                background: #fff;
+                dl{
+                    width: 100px;
+                    height: 97px;
+                    background: #fff;
+                    float:left;
+                    margin-left: 30px;
+                    margin-top: 34px;
+                    dt{
+                        font-size: 16px;
+                        color: #000;
+                        margin-bottom: 12px;
+                    }
+                    dd{
+                        font-size: 12px;
+                        margin-top: 5px;
+                        a{
+                            color: #666;
+                        }
+                    }
+                }
+            }
+            #faq-right{
+                float: left;
+                width: 270px;
+                height: 145px;
+              background: #fff;
+                border-left: 1px solid #ccc;
+                li{
+                    width: 109px;
+                    height: 135px;
+                    float: left;
+                    margin-left: 26px;
+                    margin-top:
+                    h2{
+                        font-size: 16px;
+                        color:#666 ;
+                        
+                    }
+                    img{
+                     margin:10px 0 10px 0;
+                    }
+                    span{
+                         font-size: 12px;
+                         color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+//foot
+#foot{
+    background: #fff;
+    #foot-con{
+        background: #fff;
+        width: 1200px;
+        height: 52px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        padding-top: 15px;
+       p{
+           font-size: 12px;
+           margin-bottom: 10px;
+           a{
+               margin-left:6px;
+               color: #666;
+           }
+       }
     }
 }
