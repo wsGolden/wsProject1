@@ -457,24 +457,26 @@ $bottom :bottom;
 }
 //tab
 #tab{
-    background: #ccc;
+    background: #fff;
     #tab-con{
         width: 1200px;
         height: 294px;
         margin:0 auto;
-        background: pink;
+        background:#fff;
         #tab-left{
             width: 1000px;
             height: 292px;
-            background: yellowgreen;
+            background:#fff;
             float: left;
             position: relative;
             #tab-nav{
                 width: 1000px;
                 height: 38px;
-                background: pink;
+                background:#fff;
                 border-bottom: 2px solid #f0f0f0;
-                h3{
+                a{
+                     border-bottom: 2px solid #f0f0f0;
+                    display: block;
                     width: 198px;
                     height: 38px;
                     float: left;
@@ -493,7 +495,7 @@ $bottom :bottom;
                 li{
                     width: 181px;
                     height: 252px;
-                    background: deepskyblue;
+                    background:#fff;
                     float: left;
                     border-right:1px dashed #f0f0f0;
                     padding-left: 18px;
@@ -534,16 +536,20 @@ $bottom :bottom;
                 position:absolute;
                 left: 0;
                 top: 40px;
-                z-index:-1;
-              
+                display:none;
+              z-index: 2;
             }
             #case3{
                  position:absolute;
                 left: 0;
                 top: 40px;
-                z-index: -2;
+                display: none;
+                z-index: 3;
             }
-       
+           
+            //jiexian
+     
+            //jiexian 
         }
         #tab-right{
              float: left;
@@ -997,4 +1003,13 @@ $bottom :bottom;
            }
        }
     }
+}
+//右侧栏
+#ycl{
+    width: 31.5px;
+    position:fixed;
+    top:0;
+    right: 0;
+    background: #000000;
+   z-index: 20;
 }
