@@ -485,7 +485,21 @@ $bottom :bottom;
                     color: #666;
                     font-size: 14px;
                 }
-               
+                a.normal {
+                            line-height:38px;
+                            color: #666;
+                            background: #fff;
+                           
+                          border-bottom: 2px solid #f0f0f0;
+                         }
+                a.hover {
+                                color: #ffa500;
+                                background:#fff;
+                                
+                                border-bottom: 1px solid #ffa500;
+                               
+                          }
+
             }
             
             #case1,#case2,#case3{
@@ -531,25 +545,25 @@ $bottom :bottom;
                        }
                     } 
                 }
+                
             }
+             #case1.show,#case2.show,#case3.show {
+                   display: block;
+                    }
+                #case1.hide,#case2.hide,#case3.hide {
+                    display: none;
+                      }
              #case2{
                 position:absolute;
                 left: 0;
                 top: 40px;
-                display:none;
-              z-index: 2;
             }
             #case3{
                  position:absolute;
                 left: 0;
                 top: 40px;
-                display: none;
-                z-index: 3;
             }
            
-            //jiexian
-     
-            //jiexian 
         }
         #tab-right{
              float: left;
@@ -670,16 +684,6 @@ $bottom :bottom;
                     height: 125px;
                 }
             }
-//          $colums:15;
-//          @for $i from 8 through #colums{
-//              a:nth-of-type(#($i)){
-//                  display: block;
-//                  float: left;
-//                  width: 150px;
-//                  height: 56px;
-//                  
-//              }
-//          }
              a:nth-of-type(8), a:nth-of-type(9), a:nth-of-type(10), a:nth-of-type(11), a:nth-of-type(12), a:nth-of-type(13), a:nth-of-type(14), a:nth-of-type(15){
                      display: block;
                     float: left;
