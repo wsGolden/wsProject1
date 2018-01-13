@@ -336,12 +336,12 @@ $bottom :bottom;
 }
 //nav
 #nav{
-    background: #ccc;
+    background: #fff;
      border-bottom: 2px solid #000000;
     #nav-con{
         width: 1200px;
         height: 36px;
-        background:pink;
+        background:#fff;
         margin: 0 auto;
        
         .title{
@@ -569,14 +569,14 @@ $bottom :bottom;
              float: left;
             width: 200px;
             height: 294px;
-            background: skyblue;
+            background:#fff;
             position: relative;
             h3{
                 padding-left: 10px;
                 height: 37px;
                 width: 186px;
                 line-height: 37px;
-                background: orange;
+                background:#f9f9f9;
                 margin-top: 10px;
                 border: 1px solid #f0f0f0;
                 span{
