@@ -191,6 +191,10 @@ section {
     margin-top: 18px;
     border: 1px solid #f0f0f0;
     box-shadow: 0px 4px 4px rgba(102, 102, 102, 0.65); }
+    #goods .goods-content .oA {
+      display: block;
+      width: 229px;
+      height: 100px; }
     #goods .goods-content img {
       width: 100%; }
     #goods .goods-content .goods-name {
