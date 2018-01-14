@@ -1,0 +1,106 @@
+//nav
+#nav{
+    #nav-con{
+       
+        .title{
+            position: relative; 
+            //分类推荐下的div
+        
+            #classes{
+                
+                width: 212px;
+                height: 400px;
+                z-index: 2;
+                background: #000;
+                position: absolute;
+                left :0px;
+                top: 36px;
+                display:none;
+                #classes1,#classes2,#classes3{
+                    width: 197px;
+                    padding-left:15px;
+                      background: #2b2b2b;
+                    p{
+                        width: 178px;
+                        line-height: 28px;
+                       a{   
+                      
+                           margin-left: 3px;
+                           color: #fff;
+                           font-size: 12px;
+                       }
+                       a:hover{
+                           color:#fabe00;
+                       }
+                    }
+                    
+                }
+                #classes1{
+                  
+                    height: 136px;
+                    border-bottom: 1px solid #252525;
+                }
+                #classes2{
+                    height:88px ;
+                   
+                    border-top:1px solid #333333;
+                    border-bottom: 1px solid #252525;
+                }
+                 #classes3{
+                    height:172px ;
+                 
+                    border-top:1px solid #333333;
+                  
+                }
+                
+            }
+        }
+    }
+}
+//bread
+#bread{
+    background: #ccc;
+    #bread-con{
+        background:#fff;
+        margin:0 auto;
+        width: 1190px;
+        height: 30px;
+        padding-left:10px;
+        padding-top: 10px;
+        
+        
+        a{
+            color: #666666;
+            font-size: 12px;
+            
+        }
+        
+    }
+}
+#details{
+    background: #ccc;
+    #details-con{
+        background: pink;
+        width: 1200px;
+        height: 525px;
+        margin: 0 auto;
+        #deLeft{
+            width: 400px;
+            height: 513px;
+            float: left;
+            background: greenyellow;
+        }
+         #deMiddle{
+            width: 588px;
+            height: 523px;
+            float: left;
+            background:skyblue;
+        }
+        #deRight{
+            width:208px;
+            height: 523px;
+            float: left;
+            background:palegreen;
+        }
+    }
+}
