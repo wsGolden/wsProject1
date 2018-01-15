@@ -201,6 +201,41 @@ require(["jquery","cookie"],function($,cookie){
 
 				})
 		})
+//			推荐商品
+			$.getJSON("../js/details2.json",function(data){
+				$(data).each(function(index,value){
+					var oDiv=document.createElement("div")
+					oDiv.className="de-content"
+					var oImg=document.createElement("img")
+					var oDivbox=document.getElementById("deTj")
+					
+					let img = new Image();
+					img.src=value.str;
+					oDiv.appendChild(img)
+					oDivbox.appendChild(oDiv);
+										
+					var oName=document.createElement("div")
+					oName.className="deTj-name"
+					oName.innerHTML=value.name
+					oDiv.appendChild(oName)
+					
+					
+					var oPrice=document.createElement("div")
+					oPrice.className="deTj-price"
+					oPrice.innerHTML=value.price
+					oDiv.appendChild(oPrice)
+
+
+				})
+		})
+				//跳转注册页
+		$(".zc").click(function(){
+			window.location="register.html"
+		})
+		//跳转登录页
+		$(".dl").click(function(){
+			window.location="login.html"
+		})
 	 
 	})
 

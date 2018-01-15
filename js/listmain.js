@@ -103,6 +103,14 @@ require(["jquery","cookie"],function($,cookie){
 
 				})
 		})
+		//跳转注册页
+		$(".zc").click(function(){
+			window.location="register.html"
+		})
+		//跳转登录页
+		$(".dl").click(function(){
+			window.location="login.html"
+		})
 	 
 	})
 	

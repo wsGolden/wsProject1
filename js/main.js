@@ -79,6 +79,38 @@ require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 		    });
 		
 		});
+//		吸顶功能
+	window.onscroll=function(){
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		var oXd =document.getElementById("center")
+		var oMin=document.getElementById("main-t")
+			if(scrollTop>oXd.offsetTop+oXd.offsetHeight){
+				$("#center").css({"position":"fixed","top":"0","left":"0","width":"1230px"})
+			}
+			if(scrollTop<=oMin.offsetTop){				
+				$("#center").css({"position":"relative"})
+		}
+	
+	}
+		var mark = 1;
+		$("#center-box li").click(function(){
+		mark = 2; //改变标记
+//			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;		
+			var $index=$(this).index();
+//			alert($index);
+			var $top = $(".main1").eq($index-1).offset().top-80;
+//				scrollTop=$top+"px";	
+				$("body,html").animate({
+					scrollTop: $top
+				},500, function() {
+					mark = 1;
+				}); //浏览器滚动的高度
+		})
+		
+
+	
+
+	
 		//商品切换
 		var $uli = $("#tab-left #tab-nav a");
 		var $oli = $("#tab-left #tab-case .se");
@@ -93,11 +125,19 @@ require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 		
 		//右侧栏
 		var oYcl = document.getElementById("ycl")
-		oYcl.style.height=document.documentElement.clientHeight+"px"
+		oYcl.style.height=document.documentElement.clientHeight+"px";
 		
 		//跳转list页
 		$(".tolist").click(function(){
 			window.location="html/list.html"
+		})
+		//跳转注册页
+		$(".zc").click(function(){
+			window.location="html/register.html"
+		})
+		//跳转登录页
+		$(".dl").click(function(){
+			window.location="html/login.html"
 		})
 	})
 	

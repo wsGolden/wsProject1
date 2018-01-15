@@ -582,3 +582,249 @@ main {
             font-size: 12px;
             color: #FFFDEF;
             background: #C8C8C8; }
+
+#pingjia {
+  width: 978px;
+  height: 130px;
+  background: #fff;
+  margin-left: 218px;
+  border: 1px solid #e6e6e6;
+  margin-top: 100px;
+  border-top: 2px solid #FFA500; }
+  #pingjia h4 {
+    font-size: 14px;
+    color: #777;
+    width: 978px;
+    height: 31px;
+    background: #fcfcfc;
+    line-height: 31px;
+    border-bottom: solid #D7D7D7 1px; }
+  #pingjia #pingjia-con {
+    width: 978px;
+    height: 99px;
+    background: #fff;
+    border-bottom: solid #D7D7D7 1px; }
+    #pingjia #pingjia-con #pingL {
+      width: 200px;
+      height: 84px;
+      background: #fff;
+      float: left;
+      text-align: center;
+      padding-top: 15px; }
+      #pingjia #pingjia-con #pingL p {
+        color: #ffa500; }
+        #pingjia #pingjia-con #pingL p strong {
+          font-weight: 600;
+          font-size: 35px; }
+      #pingjia #pingjia-con #pingL span {
+        font-size: 12px;
+        color: #666; }
+    #pingjia #pingjia-con #pingM {
+      width: 280px;
+      height: 99px;
+      background: #fff;
+      float: left;
+      padding-left: 20px; }
+      #pingjia #pingjia-con #pingM dl {
+        width: 300px;
+        height: 15px;
+        background: #fff;
+        margin-top: 15px; }
+        #pingjia #pingjia-con #pingM dl dt {
+          width: 80px;
+          height: 15px;
+          float: left;
+          font-size: 12px; }
+          #pingjia #pingjia-con #pingM dl dt em {
+            color: #666666; }
+        #pingjia #pingjia-con #pingM dl dd {
+          float: left;
+          width: 220px;
+          height: 15px;
+          line-height: 15px; }
+          #pingjia #pingjia-con #pingM dl dd i {
+            display: block;
+            width: 100px;
+            height: 15px;
+            background: #F5F5F5; }
+    #pingjia #pingjia-con #pingR {
+      width: 143px;
+      height: 60px;
+      background: #fff;
+      float: right;
+      padding-left: 20px;
+      margin-top: 20px;
+      border-left: 1px dashed #e6e6e6; }
+      #pingjia #pingjia-con #pingR span {
+        font-size: 12px; }
+      #pingjia #pingjia-con #pingR a {
+        margin: 5px 0 0 10px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid #DCDCDC;
+        display: block;
+        width: 108px;
+        height: 30px;
+        background: #FFA500;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 30px; }
+      #pingjia #pingjia-con #pingR a:hover {
+        background: #4C334C; }
+
+#pingjia1 {
+  margin-left: 218px;
+  margin-top: 30px;
+  width: 978px;
+  height: 154px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #FFA500; }
+  #pingjia1 ul {
+    width: 978px;
+    height: 33px;
+    background: #FCFCFC;
+    border-bottom: solid #D7D7D7 1px; }
+    #pingjia1 ul li {
+      float: left; }
+      #pingjia1 ul li a {
+        display: block;
+        background-color: #F5F5F5;
+        color: #777;
+        width: 104px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        border-left: 1px solid #D7D7D7;
+        font-size: 12px; }
+  #pingjia1 #prs2 {
+    width: 978px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 12px;
+    color: #666; }
+
+#zixun {
+  width: 978px;
+  height: 130px;
+  background: #fff;
+  margin-left: 218px;
+  border: 1px solid #e6e6e6;
+  margin-top: 100px;
+  border-top: 2px solid #FFA500; }
+  #zixun h4 {
+    font-size: 14px;
+    color: #777;
+    width: 978px;
+    height: 31px;
+    background: #fcfcfc;
+    line-height: 31px;
+    border-bottom: solid #D7D7D7 1px; }
+  #zixun #zixunL {
+    float: left;
+    width: 650px;
+    height: 80px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    padding: 20px 0 0 50px; }
+  #zixun #zixunR {
+    width: 143px;
+    height: 60px;
+    background: #fff;
+    float: right;
+    padding-left: 20px;
+    margin-top: 20px;
+    border-left: 1px dashed #e6e6e6; }
+    #zixun #zixunR a {
+      margin: 5px 0 0 10px;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+      border: 1px solid #DCDCDC;
+      display: block;
+      width: 108px;
+      height: 30px;
+      background: #FFA500;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px; }
+    #zixun #zixunR a:hover {
+      background: #4C334C; }
+
+#zixun1 {
+  margin-left: 218px;
+  margin-top: 30px;
+  width: 978px;
+  height: 154px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #FFA500; }
+  #zixun1 ul {
+    width: 978px;
+    height: 33px;
+    background: #FCFCFC;
+    border-bottom: solid #D7D7D7 1px; }
+    #zixun1 ul li {
+      float: left; }
+      #zixun1 ul li a {
+        display: block;
+        background-color: #F5F5F5;
+        color: #777;
+        width: 104px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        border-left: 1px solid #D7D7D7;
+        font-size: 12px; }
+  #zixun1 #zixun2 {
+    width: 978px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 12px;
+    color: #666; }
+
+#deTj {
+  width: 980px;
+  height: 281px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: 100px 0 0 218px;
+  border-top: 2px solid #FFA500; }
+  #deTj h4 {
+    font-size: 14px;
+    color: #777;
+    width: 978px;
+    height: 31px;
+    background: #fcfcfc;
+    line-height: 31px;
+    border-bottom: solid #D7D7D7 1px; }
+  #deTj .de-content {
+    float: left;
+    width: 175px;
+    height: 250px;
+    text-align: center;
+    padding: 0 10px;
+    border-right: 1px dashed #dedede; }
+    #deTj .de-content img {
+      display: block;
+      width: 120px;
+      height: 120px;
+      margin: 20px auto; }
+    #deTj .de-content .deTj-name {
+      width: 176px;
+      height: 38px;
+      background: #fff;
+      font-size: 12px;
+      color: #4c334c;
+      margin: 10px 0 10px 0; }
+    #deTj .de-content .deTj-price {
+      width: 176px;
+      height: 30px;
+      background: #fff;
+      font-size: 14px;
+      font-weight: 900;
+      color: #FFA500;
+      line-height: 30px; }

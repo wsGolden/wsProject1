@@ -706,8 +706,9 @@ $bottom :bottom;
 }
 //电梯
 #center{
-    background: #fff;
-    margin-top: 20px;
+    background: #FFF;
+    width: 1200px;
+    z-index: 10000;
     #center-box{
         background:#fff;
         width: 1200px;
@@ -735,9 +736,7 @@ $bottom :bottom;
                 float: left;
                 width: 152px;
                 height: 36px;
-            }
-           a{
-               display: block;
+                display: block;
                background: #ffac00;
                width: 120px;
                height: 36px;
@@ -745,7 +744,9 @@ $bottom :bottom;
                font-size: 14px;
                text-align: center;
                line-height: 36px;
-           }
+               margin-left: 20px;
+            }
+           
     }
     
 }
@@ -1016,4 +1017,67 @@ $bottom :bottom;
     right: 0;
     background: #000000;
    z-index: 20;
+   #vart{
+       width: 31.5px;
+       height: 319px;
+       background:#000;
+       margin-top: 180px;
+       .qq{
+           width: 31.5px;
+           height: 46px;
+           a{
+               display: block;
+                width: 31.5px;
+            height:37px;
+            padding-top: 9px;
+           background:#000;
+            img{
+                border-radius:50%;
+                
+                display: block;
+               
+                width: 28px;
+                height: 28px;
+            }
+           }
+           a:hover{
+                background:#FFA500;
+           }
+       }
+       #gwc{
+           width: 23.5px;
+           height: 97px;
+           background:#000;
+           padding:15px 0 0 8px ;
+           border-bottom: 1px dashed #DEDEDE;
+           border-top: 1px dashed #DEDEDE;
+           color: #fff;
+           i{
+           
+               width: 31.5px;
+               height: 35px;
+           }
+       }
+       #gwc:hover{
+           background:#FFA500
+       }
+    
+   }
+      #fan{
+           width: 31.5px;
+           height: 35px;
+           background:#000;
+           margin-top:150px;
+        
+           a{
+               display: block;
+               width: 31.5px;
+           height: 35px;
+              line-height: 35px;
+           color: #fff;
+           }
+       }
+       #fan:hover{
+           background:#FFA500;
+       }
 }

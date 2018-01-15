@@ -538,8 +538,9 @@
           height: 56px; }
 
 #center {
-  background: #fff;
-  margin-top: 20px; }
+  background: #FFF;
+  width: 1200px;
+  z-index: 10000; }
   #center #center-box {
     background: #fff;
     width: 1200px;
@@ -560,8 +561,7 @@
     #center #center-box li {
       float: left;
       width: 152px;
-      height: 36px; }
-    #center #center-box a {
+      height: 36px;
       display: block;
       background: #ffac00;
       width: 120px;
@@ -569,7 +569,8 @@
       color: #fff;
       font-size: 14px;
       text-align: center;
-      line-height: 36px; }
+      line-height: 36px;
+      margin-left: 20px; }
 
 .main1 {
   background: #fff; }
@@ -779,3 +780,50 @@
   right: 0;
   background: #000000;
   z-index: 20; }
+  #ycl #vart {
+    width: 31.5px;
+    height: 319px;
+    background: #000;
+    margin-top: 180px; }
+    #ycl #vart .qq {
+      width: 31.5px;
+      height: 46px; }
+      #ycl #vart .qq a {
+        display: block;
+        width: 31.5px;
+        height: 37px;
+        padding-top: 9px;
+        background: #000; }
+        #ycl #vart .qq a img {
+          border-radius: 50%;
+          display: block;
+          width: 28px;
+          height: 28px; }
+      #ycl #vart .qq a:hover {
+        background: #FFA500; }
+    #ycl #vart #gwc {
+      width: 23.5px;
+      height: 97px;
+      background: #000;
+      padding: 15px 0 0 8px;
+      border-bottom: 1px dashed #DEDEDE;
+      border-top: 1px dashed #DEDEDE;
+      color: #fff; }
+      #ycl #vart #gwc i {
+        width: 31.5px;
+        height: 35px; }
+    #ycl #vart #gwc:hover {
+      background: #FFA500; }
+  #ycl #fan {
+    width: 31.5px;
+    height: 35px;
+    background: #000;
+    margin-top: 150px; }
+    #ycl #fan a {
+      display: block;
+      width: 31.5px;
+      height: 35px;
+      line-height: 35px;
+      color: #fff; }
+  #ycl #fan:hover {
+    background: #FFA500; }
