@@ -563,14 +563,17 @@
       width: 152px;
       height: 36px;
       display: block;
-      background: #ffac00;
       width: 120px;
       height: 36px;
-      color: #fff;
       font-size: 14px;
       text-align: center;
       line-height: 36px;
       margin-left: 20px; }
+    #center #center-box ul li.normal {
+      background: #fff; }
+    #center #center-box ul li.hover {
+      color: #fff;
+      background: #ffac00; }
 
 .main1 {
   background: #fff; }

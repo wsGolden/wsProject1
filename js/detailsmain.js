@@ -11,7 +11,7 @@ require(["jquery","cookie"],function($,cookie){
 	//代码
 	
 	$(function(){	
-		
+		loadMsg();
 					//精选分类菜单显示
 				$(".title").mouseover(function(){
 					$("#classes").css("display","block")
@@ -142,8 +142,6 @@ require(["jquery","cookie"],function($,cookie){
 		//获取页面元素
 				const oUl = document.getElementById("ul1");
 				const oLis = oUl.getElementsByTagName("li");
-				
-				
 				let onOff = false; //是否点击过
 				let nowIndex = -1; //点过的下标 
 				//给li添加移入事件
@@ -187,9 +185,7 @@ require(["jquery","cookie"],function($,cookie){
 							$("#num").val(parseInt($("#num").val())- 1)
 						}
 				})
-					
-					//获取商品
-						//获取商品
+						//获取商品描述
 			$.getJSON("../js/details.json",function(data){
 				$(data).each(function(index,value){
 					var oDiv=document.getElementById("main_right")
@@ -228,6 +224,40 @@ require(["jquery","cookie"],function($,cookie){
 
 				})
 		})
+//			获取商品
+		function query(_name){
+				var str = location.search.replace("?", "");
+				var arr = str.split("&");
+				for(var i=0,l=arr.length; i<l; i++){
+					var col=arr[i].split("=");
+					if( col[0]==_name ){
+						return col[1];
+					}
+				}
+				return "";
+		}
+		var id = query("id");
+//		console.log(id);
+		function loadMsg(){
+			$.ajax("../js/list.json")
+			.then(function(data){
+				console.log(data[id].id)
+				document.getElementById("smallimg").src = "../listimg/"+data[id].src
+				$("#deMiddle .name").html(data[id].name)
+				$(".ncs_mata #jg").html(data[id].price)
+				
+				$(".decart").on("click",function(){
+			
+//				console.log(res[id])
+				$.cookie("goods",data[id].id,{expires: 10})
+				})
+				$(".decart").on("click",function(){
+					window.location="../html/cart.html"
+				})
+			})
+		}
+		//购物车
+			
 				//跳转注册页
 		$(".zc").click(function(){
 			window.location="register.html"

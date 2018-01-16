@@ -80,7 +80,7 @@ require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 		
 		});
 //		吸顶功能
-	window.onscroll=function(){
+		$(window).scroll(function() {
 		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
 		var oXd =document.getElementById("center")
 		var oMin=document.getElementById("main-t")
@@ -89,16 +89,16 @@ require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 			}
 			if(scrollTop<=oMin.offsetTop){				
 				$("#center").css({"position":"relative"})
-		}
-	
-	}
+			}
+
+	})
 		var mark = 1;
 		$("#center-box li").click(function(){
 		mark = 2; //改变标记
 //			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;		
 			var $index=$(this).index();
 //			alert($index);
-			var $top = $(".main1").eq($index-1).offset().top-80;
+			var $top = $(".main1").eq($index).offset().top-80;
 //				scrollTop=$top+"px";	
 				$("body,html").animate({
 					scrollTop: $top
@@ -106,7 +106,15 @@ require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 					mark = 1;
 				}); //浏览器滚动的高度
 		})
-		
+//		楼梯背景切换
+		var $uli = $("#center-box ul li");
+			$uli.addClass('normal');
+			$uli.eq(0).removeClass().addClass('hover')
+			
+			$uli.mouseover(function(){
+			var $index = $(this).index()
+			$(this).removeClass().addClass("hover").siblings().removeClass().addClass("normal")
+			})
 
 	
 

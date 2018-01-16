@@ -79,8 +79,8 @@ require(["jquery","cookie"],function($,cookie){
 					let img = new Image();
 					var oA=document.createElement("a")
 					oA.className="oA"
-					oA.href="../html/details.html";
-					img.src=value.str
+					oA.href="../html/details.html?id="+value.id;
+					img.src="../listimg/"+value.src;
 					oA.appendChild(img)
 					oDiv.appendChild(oA)
 					oDivbox.appendChild(oDiv)
