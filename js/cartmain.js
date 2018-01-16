@@ -95,7 +95,7 @@ require(["jquery","cookie"],function($,cookie){
 							<li style="width: 240px;">
 								<div id="num">
 									<b id="num_left">-</b>
-									<i id="good">1</i>
+									<input type="text" value="1" id="good"/ >
 									<b id="num_right">+</b>
 								</div>
 								<p style="color: #D70057; line-height: 20px;font-size: 12px;">库存仅剩1件</p>
@@ -112,17 +112,42 @@ require(["jquery","cookie"],function($,cookie){
 							</li>
 						</div>
 					`
-					$("#cart").html(html)
-					$(".goodsAll").html($("#goods").length)
+					$(html).appendTo("#cart");
+	$(".goodsAll").html($("#goods").length)
 					$(".money").html(data[a].price)
+//购买数量
+				$("#num_right").click(function(){
+						$("#good").val(parseInt($("#good").val()) + 1)
+						$("#good").parent().parent().next().children().html($("#good").val()*$("#good").parent().parent().prev().children().html())	
+					$(".goodsAll").html($("#goods").length)
+					$(".money").html($("#good").val()*$("#good").parent().parent().prev().children().html())
+				});
+					$("#num_left").click(function(){
+						if(parseInt($("#good").val()) == 0){
+							$("#good").val(0)
+						}else{
+							$("#good").val(parseInt($("#good").val())- 1)
+						}
+						$("#good").parent().parent().next().children().html($("#good").val()*$("#good").parent().parent().prev().children().html())
+						$(".goodsAll").html($("#goods").length)
+					$(".money").html($("#good").val()*$("#good").parent().parent().prev().children().html())
+					})
+					
 					
 					$(".del").click(function(){
 						$("#goods").remove()
 						$.cookie("goods").remove()
 					})
-				
 			})
 		}
+				//跳转注册页
+		$(".zc").click(function(){
+			window.location="register.html"
+		})
+		//跳转登录页
+		$(".dl").click(function(){
+			window.location="login.html"
+		})
 
 	})
 })

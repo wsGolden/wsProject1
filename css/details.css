@@ -796,7 +796,9 @@ main {
 
 #cart-box {
   width: 348px;
-  background: pink; }
+  background: #fff; }
+  #cart-box #cart-con2 {
+    display: none; }
   #cart-box dl {
     border-bottom: 1px dashed #fefefe;
     width: 348px;

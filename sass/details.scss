@@ -991,8 +991,10 @@ main{
 //购物车
 #cart-box{
     width: 348px;
-    background:pink;
-    
+    background:#fff;
+    #cart-con2{
+        display: none;
+    }
     dl{
        
       

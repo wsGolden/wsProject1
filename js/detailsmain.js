@@ -12,6 +12,7 @@ require(["jquery","cookie"],function($,cookie){
 	
 	$(function(){	
 		loadMsg();
+//		loadCart()
 					//精选分类菜单显示
 				$(".title").mouseover(function(){
 					$("#classes").css("display","block")
@@ -241,23 +242,55 @@ require(["jquery","cookie"],function($,cookie){
 		function loadMsg(){
 			$.ajax("../js/list.json")
 			.then(function(data){
-				console.log(data[id].id)
+//				console.log(data[id].id)
 				document.getElementById("smallimg").src = "../listimg/"+data[id].src
 				$("#deMiddle .name").html(data[id].name)
-				$(".ncs_mata #jg").html(data[id].price)
-				
-				$(".decart").on("click",function(){
-			
+				$(".ncs_mata #jg").html(data[id].price)	
+				$("#cart-con2").css({
+									"display": "block"
+								});
+				$(".decart").on("click",function(){			
 //				console.log(res[id])
 				$.cookie("goods",data[id].id,{expires: 10})
+				//jie
+								//购物车
+					if($.cookie("goods")){
+					$.ajax("../js/list.json")
+						.then(function(data){
+							var a = $.cookie("goods") ? $.cookie("goods") : "";
+							$("#cart-con2").css({
+									"display": "none"
+								});
+//							if(!a) {
+								
+//							}else{
+								var str = "";
+								var str=`		
+										<dl id="goods">
+													<dt><img src="../listimg/${data[a].src}" alt="" /></dt>
+													<dd>${data[a].name}</dd>
+													<em style="display:block;margin-top: 10px;color:#FFA500">${data[a].price}</em><br />
+													<a href="javascript:;" class="del">删除</a>
+												</dl>
+								`
+								$(str).appendTo("#cart-box");
+								
+//							}	
+								$(".del").click(function(){
+									$("#goods").remove()
+									$.cookie("goods").remove()
+								})
+							
+						})
+					}
+
 				})
-				$(".decart").on("click",function(){
-					window.location="../html/cart.html"
-				})
+
 			})
 		}
-		//购物车
-			
+		$(".buy1").click(function(){
+			window.location="cart.html"
+		})	
 				//跳转注册页
 		$(".zc").click(function(){
 			window.location="register.html"
