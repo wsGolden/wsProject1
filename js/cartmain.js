@@ -9,7 +9,7 @@ require.config({
 //执行代码
 require(["jquery","cookie"],function($,cookie){
 	//代码
-		$(function(){	
+			$(function(){
 						//精选分类菜单显示
 				$(".title").mouseover(function(){
 					$("#classes").css("display","block")

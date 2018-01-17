@@ -270,6 +270,51 @@
     height: 36px;
     background: #fff;
     margin: 0 auto; }
+    #nav #nav-con #erjul li a:hover {
+      color: #FFA500; }
+    #nav #nav-con #erjul #jcerj {
+      position: relative; }
+      #nav #nav-con #erjul #jcerj #erj {
+        display: none;
+        position: absolute;
+        top: 36px;
+        left: -88px;
+        width: 988px;
+        height: 419px;
+        z-index: 10000;
+        background: #fff; }
+        #nav #nav-con #erjul #jcerj #erj .erjC {
+          width: 300px;
+          height: 419px;
+          float: left;
+          margin-left: 20px; }
+          #nav #nav-con #erjul #jcerj #erj .erjC .t {
+            text-align: left;
+            width: 300px;
+            height: 31px;
+            display: block;
+            font-size: 12px;
+            border-bottom: 1px solid #eee; }
+          #nav #nav-con #erjul #jcerj #erj .erjC dl {
+            width: 300px;
+            height: 60px;
+            background: #fff;
+            margin-top: 5px;
+            margin-left: 10px; }
+            #nav #nav-con #erjul #jcerj #erj .erjC dl a {
+              margin: 0;
+              padding: 0 10px;
+              font-size: 12px;
+              float: left;
+              display: inline-block;
+              height: 24px;
+              line-height: 24px;
+              color: #929292; }
+            #nav #nav-con #erjul #jcerj #erj .erjC dl a:hover {
+              position: relative;
+              background: #ffc800;
+              border-radius: 2px;
+              color: #fff; }
     #nav #nav-con .title {
       width: 202px;
       height: 36px;

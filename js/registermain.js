@@ -147,7 +147,10 @@ require(["jquery","cookie"],function($,cookie){
 				alert("注册失败，请按规则填写注册信息")
 			}
 		})
-
+		//跳转登录
+		$(".dl").click(function(){
+				window.location="../html/login.html"
+			})
 
 	})
 })

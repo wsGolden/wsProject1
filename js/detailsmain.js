@@ -12,8 +12,7 @@ require(["jquery","cookie"],function($,cookie){
 	
 	$(function(){	
 		loadMsg();
-//		loadCart()
-					//精选分类菜单显示
+		//精选分类菜单显示
 				$(".title").mouseover(function(){
 					$("#classes").css("display","block")
 				})
@@ -261,9 +260,7 @@ require(["jquery","cookie"],function($,cookie){
 							$("#cart-con2").css({
 									"display": "none"
 								});
-//							if(!a) {
-								
-//							}else{
+//						
 								var str = "";
 								var str=`		
 										<dl id="goods">
@@ -291,6 +288,9 @@ require(["jquery","cookie"],function($,cookie){
 		$(".buy1").click(function(){
 			window.location="cart.html"
 		})	
+		//右侧栏
+		var oYcl = document.getElementById("ycl")
+		oYcl.style.height=document.documentElement.clientHeight+"px";
 				//跳转注册页
 		$(".zc").click(function(){
 			window.location="register.html"

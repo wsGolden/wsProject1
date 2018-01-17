@@ -11,7 +11,14 @@ require.config({
 require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 	//代码
 	
-	$(function(){		
+	$(function(){	
+//		二级菜单消失
+		$("#jcerj").mouseover(function(){
+			$("#erj").css("display","block")
+		})
+		$("#jcerj").mouseleave(function(){
+			$("#erj").css("display","none")
+		})
 		//购物车显示消失
 		var $cartcon=$("#cart-con");
 		var $cartcon1=$("#cart-con1");

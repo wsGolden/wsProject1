@@ -68,6 +68,15 @@ require(["jquery","cookie"],function($,cookie){
 			$cartcon1.css("display","none")
 			$cartcon.css("backgroundColor","#fafafa")
 		})
+		//列表
+		$("#files li:has(ul)").click(function(){
+		if($(this).children("ul").is(":hidden")){
+				$(this).find("em").html("-")
+			} else {
+				$(this).find("em").html("+")
+			}
+			$(this).children("ul").toggle("slow");
+})
 			//获取商品
 		$.getJSON("../js/list.json",function(data){
 				$(data).each(function(index,value){
@@ -103,6 +112,9 @@ require(["jquery","cookie"],function($,cookie){
 
 				})
 		})
+		//右侧栏
+		var oYcl = document.getElementById("ycl")
+		oYcl.style.height=document.documentElement.clientHeight+"px";
 		//跳转注册页
 		$(".zc").click(function(){
 			window.location="register.html"

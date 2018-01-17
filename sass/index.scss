@@ -343,7 +343,63 @@ $bottom :bottom;
         height: 36px;
         background:#fff;
         margin: 0 auto;
-       
+       #erjul{
+           li a:hover{
+               color: #FFA500;
+           }
+           #jcerj{
+               position: relative;
+               #erj{
+                   display: none;
+                   position: absolute;
+                   top: 36px;
+                   left: -88px;
+                   width: 988px;
+                   height: 419px;
+                   z-index: 10000;
+                   background: #fff;
+                   .erjC{
+                       
+                       width: 300px;
+                       height: 419px;
+                       float: left;
+                       margin-left: 20px;
+                       .t{
+                           text-align: left;
+                           width: 300px;
+                           height: 31px;
+                           display: block;
+                           font-size: 12px;
+                           border-bottom: 1px solid #eee;
+                       }
+                       dl{
+                           width: 300px;
+                           height: 60px;
+                           background:#fff;
+                           margin-top: 5px;
+                           margin-left: 10px;
+                           a{
+                               margin:0;
+                               padding: 0 10px;
+                               font-size: 12px;
+                               float: left;
+                               display:inline-block;
+                               height: 24px;
+                               line-height: 24px;
+                               color: #929292;
+                               
+                           }
+                           a:hover{
+                               position: relative;
+                                background: #ffc800;
+                                border-radius: 2px;
+                                color: #fff;
+                           }
+                       }
+                   }
+               }
+           }
+       }
         .title{
             width: 202px;
             height:36px ;
