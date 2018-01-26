@@ -11,7 +11,7 @@ require.config({
 require(["jquery","cookie","swiper","zepto"],function($,cookie,swiper,zepto){
 	//代码
 	
-	$(function(){	
+	$(function(){;	
 //		二级菜单消失
 		$("#jcerj").mouseover(function(){
 			$("#erj").css("display","block")
